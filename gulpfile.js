@@ -48,9 +48,9 @@ function javascript(){
     .pipe(jsImport({
         hideConsole: true
     }))
-    .pipe(concat('all.js'))
+    //.pipe(concat('app.js'))
     .pipe(gulpIf(isProd, uglify()))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('dist'));
 }
 
 function img(){
